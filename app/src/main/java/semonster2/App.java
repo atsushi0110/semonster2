@@ -5,11 +5,7 @@ package semonster2;
 
 public class App {
   public String getGreeting() {
-    return "githubflow!";
-  }
-
-  public int sum(int x, int y) {
-    return x + y;
+    return "githubflow!!";
   }
 
   public static void main(String[] args) {

@@ -16,12 +16,6 @@ public class AppTest {
   @Test
   public void testAppReternHelloWorld() {
     App classUnderTest = new App();
-    assertEquals("githubflow!", classUnderTest.getGreeting());
-  }
-
-  @Test
-  public void testAppSum() {
-    App classUnderTest = new App();
-    assertEquals(12, classUnderTest.sum(5, 7));
+    assertEquals("githubflow!!", classUnderTest.getGreeting());
   }
 }
