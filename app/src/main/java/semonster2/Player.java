@@ -13,7 +13,7 @@ public class Player {
   public void drawMonsters() {
     Monster monster=new Monster("スライム",1);
     Random rand=new Random(0);
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 7; i++) {
       this.deck.add(new Monster(monster.summonMonster(rand.nextInt(8)),rand.nextInt(5)));
     }
   }

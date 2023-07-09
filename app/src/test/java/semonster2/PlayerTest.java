@@ -10,7 +10,7 @@ public class PlayerTest {
 
     @Test public void HowManyDecks(){
         Player classUnderTest=new Player();
-        int expected=8;
+        int expected=7;
         classUnderTest.drawMonsters();
         assertEquals(expected,classUnderTest.deck.size());
     }
