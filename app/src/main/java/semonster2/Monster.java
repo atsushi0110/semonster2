@@ -3,12 +3,14 @@ package semonster2;
 
 public class Monster {
   String name;
-  int rare;// 1:normal,2:uncommon,3:rare,4:ultra rare
+  int rare;// 1:common,2:uncommon,3:rare,4:ultra rare
 
   Monster(String name,int rare) {
     this.rare=rare;
     if(rare>=3){
       this.name=this.evolutionMonster(name);
+    }else if(rare<2){
+      this.name=this.commonMonster(name);
     }else{
       this.name=name;
     }
@@ -21,6 +23,10 @@ public class Monster {
 
   String evolutionMonster(String mname){
     return "キング"+mname;
+  }
+
+  String commonMonster(String mname){
+    return "そこら辺にいる"+mname;
   }
 
   @Override

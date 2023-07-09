@@ -24,4 +24,10 @@ public class MonsterTest {
         String expected="キングスライム";
         assertEquals(expected,classUnderTest.evolutionMonster("スライム"));
     }
+
+    @Test public void commonMonsterTest(){
+        Monster classUnderTest = new Monster("スライム",0);
+        String expected="そこら辺にいるスライム";
+        assertEquals(expected,classUnderTest.commonMonster("スライム"));
+    }
 }
